@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  commesi:
+    image: ${DOCKER_REGISTRY-}commesi
+    build:
+      context: .
+      dockerfile: commesi/Dockerfile
